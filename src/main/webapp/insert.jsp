@@ -10,12 +10,13 @@
 
 <html >
 <head>
-    <title>insert.jsp</title>
+    <title>회원 가입</title>
 </head>
 <body>
-<%@include file="head.jsp"%>
-<h1>insert.jsp</h1>
+<%@ include file="head.jsp"%>
+<h1>회원 가입</h1>
 
+<div>
 <form action="insertproc.jsp">
     username<input type="text" name="username"/><br>
     password<input type="text" name="password"/><br>
@@ -23,6 +24,7 @@
     여<input type="checkbox" name="gender" value="여"/><br>
     <input type="submit" value="저장" />
 </form>
+</div>
 </body>
 </html>
 

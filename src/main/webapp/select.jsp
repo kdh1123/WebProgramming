@@ -17,22 +17,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>유저 목록 & 삭제</title>
 </head>
 <body>
 <%@ include file="head.jsp" %>
-<h1>select.jsp</h1>
+<h1>유저 목록 관리</h1>
 <form action="delete.jsp">
     <table style="width:100%; border: 1px solid black;">
         <tr>
-            <th></th><th>순번</th><th>이름</th><th>비번</th><th>성별</th>
+            <th>id</th><th>순번</th><th>이름</th><th>비번</th><th>성별</th>
         </tr>
         <%
             for(int i =0; i< list.size(); i++){
                 Member member = list.get(i);
         %>
         <tr>
-            <td> <input type="checkbox" name="id" value="<%=member.getId()%>" /> </td>
+            <td> <input type="checkbox" name="id" value="<%=member.getId()%>" /></td>
             <td> <%=member.getId()%> </td>
             <td> <%=member.getUsername()%> </td>
             <td> <%=member.getPassword()%> </td>

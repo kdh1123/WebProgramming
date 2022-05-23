@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>메인화면</title>
 </head>
+
 <body>
 <%@ include file="head.jsp" %>
-<h1>index.jsp</h1>
+<h1>로그인 페이지 기능 구현</h1>
 </body>
 </html>

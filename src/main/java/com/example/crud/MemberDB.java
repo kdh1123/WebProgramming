@@ -16,7 +16,7 @@ public class MemberDB {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");  // mysql.jar 라이브러리 확인
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/aaa","root","key195163!");
-            pstmt = con.prepareStatement("select * from member");
+            pstmt = con.prepareStatement("select * from UserInfo");
             rs = pstmt.executeQuery();
             while (rs.next()){
                 Member member = new Member();
@@ -54,7 +54,8 @@ public class MemberDB {
                     "jdbc:mysql://localhost:3306/aaa",
                     "root","key195163!");
             // sql 구문 준비
-            pstmt = con.prepareStatement("delete from member where id in ("+values+")");
+            pstmt = con.prepareStatement("delete from UserInfo where id = ?");
+            pstmt.setString(1,values);
             pstmt.executeUpdate();// sql 구문 실행...
         }catch (Exception e){
             e.printStackTrace();
@@ -68,7 +69,7 @@ public class MemberDB {
                     "jdbc:mysql://localhost:3306/aaa",
                     "root","key195163!");
             // sql 구문 준비
-            pstmt = con.prepareStatement("insert into member"+"(username,password,gender)"+" values(?,?,?)");
+            pstmt = con.prepareStatement("insert into UserInfo"+"(username,password,gender)"+" values(?,?,?)");
             pstmt.setString(1,username);
             pstmt.setString(2,password);
             pstmt.setString(3,gender);
@@ -85,7 +86,7 @@ public class MemberDB {
                     "jdbc:mysql://localhost:3306/aaa",
                     "root","key195163!");
             // sql 구문 준비
-            pstmt = con.prepareStatement("update member set username=?, password=?, gender=? where id=?");
+            pstmt = con.prepareStatement("update UserInfo set username=?, password=?, gender=? where id = ?");
             pstmt.setString(1,username);
             pstmt.setString(2,password);
             pstmt.setString(3,gender);
@@ -105,7 +106,7 @@ public class MemberDB {
                     "jdbc:mysql://localhost:3306/aaa",
                     "root","key195163!");
             // sql 구문 준비
-            pstmt = con.prepareStatement("select * from member where username=? and password=?");
+            pstmt = con.prepareStatement("select * from UserInfo where username=? and password=?");
             pstmt.setString(1,username);
             pstmt.setString(2,password);
             rs = pstmt.executeQuery();

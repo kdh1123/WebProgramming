@@ -12,9 +12,10 @@
     String username = request.getParameter("username");
     String password = request.getParameter("password");
     String gender = request.getParameter("gender");
+    String id = request.getParameter("id");
 
     MemberDB md = new MemberDB();
-    md.doInsert(username, password, gender);
+    md.doUpdate(username, password, gender, id);
 
     response.sendRedirect("select.jsp");
 %>

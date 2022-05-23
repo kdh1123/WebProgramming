@@ -10,14 +10,14 @@
 
 <html >
 <head>
-    <title>update.jsp</title>
+    <title>회원 정보 수정</title>
 </head>
 <body>
 <%@include file="head.jsp"%>
-<h1>insert.jsp</h1>
+<h1>회원 정보 수정</h1>
 
 <form action="updateproc.jsp">
-    <input type="hidden" name = "id" value="">
+    id<input type="text" name = "id"><br>
     username<input type="text" name="username"/><br>
     password<input type="text" name="password"/><br>
     남<input type="checkbox" name="gender" value="남"/>

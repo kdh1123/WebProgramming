@@ -9,14 +9,17 @@
 <%@include file="head.jsp"%>
 <html>
 <head>
-    <title>Title</title>
+    <title>로그인</title>
 </head>
 <body>
+<h1>로그인</h1>
+<div style="">
 <form action="loginproc.jsp">
-    id <input name = "username" type="text">
-    pw <input name = "password" type="text">
+    id <input name = "username" type="text"><br>
+    pw <input name = "password" type="text"><br>
     <input type="submit" value="로그인">
 
 </form>
+</div>
 </body>
 </html>
