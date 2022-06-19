@@ -22,9 +22,9 @@
         <div class="row" style="margin-bottom: 40px">
             <div class="col">
                 제목
-                <input class="form-control" type="text" name="title">
+                <input class="form-control" type="text" name="title" value="<%=board.getTitle()%>"/>
                 내용
-                <textarea class="form-control" rows="15" name="content"></textarea>
+                <textarea class="form-control" rows="15" name="content"><%=board.getContent()%></textarea>
                 작성자
                 <div class="form-control" style="margin-bottom: 40px">
                     <p>
@@ -32,7 +32,6 @@
                     </p>
                 </div>
                 <input type="hidden" name="idx" value="<%=idx%>" />
-            </input>
         </div>
         <div class="row">
             <div class="col">
