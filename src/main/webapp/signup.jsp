@@ -17,7 +17,7 @@
 <h1>회원 가입</h1>
 
 <div>
-<form action="insertproc.jsp">
+<form action="signupproc.jsp">
     username<input type="text" name="username"/><br>
     password<input type="text" name="password"/><br>
     남<input type="checkbox" name="gender" value="남"/>

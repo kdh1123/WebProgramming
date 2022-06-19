@@ -2,7 +2,7 @@
     <ul>
         <li>
             <h3>
-            <a href="index.jsp">Main</a>
+            <a href="sign.jsp">Main</a>
             </h3>
         </li>
         <li>
@@ -12,7 +12,7 @@
         </li>
         <li>
             <h3>
-            <a href="insert.jsp">SignUp</a>
+            <a href="signup.jsp">SignUp</a>
             </h3>
         </li>
         <li>
@@ -22,7 +22,7 @@
         </li>
         <li>
             <h3>
-                <a href="update.jsp">UpdateInfo</a>
+                <a href="signrevise.jsp">UpdateInfo</a>
             </h3>
         </li>
     </ul>
