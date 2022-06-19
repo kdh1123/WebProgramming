@@ -26,9 +26,13 @@
                 내용
                 <textarea class="form-control" rows="15" name="content"></textarea>
                 작성자
-                <div class="form-control" name="name" value="<%=board.getName()%>">
+                <div class="form-control" style="margin-bottom: 40px">
+                    <p>
+                        <%=board.getName()%>
+                    </p>
+                </div>
                 <input type="hidden" name="idx" value="<%=idx%>" />
-            </div>
+            </input>
         </div>
         <div class="row">
             <div class="col">

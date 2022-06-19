@@ -57,7 +57,7 @@ public class BoardManager {
                     "(name,title,content,wdate)" +
                     " values " +
                     "(?,?,?,?)");
-            if(board.getName() == "" || board.getContent() == "" || board.getTitle() == ""){
+            if(board.getName().trim().equals("") || board.getContent().trim().equals("") || board.getTitle().trim().equals("")){
                 return false;
             }
             pstmt.setString(1, board.getName());
@@ -121,6 +121,9 @@ public class BoardManager {
                     " title = ?,content = ?" +
                     " where " +
                     "idx = ?");
+            if( board.getContent().trim().equals("") || board.getTitle().trim().equals("")){
+                return false;
+            }
             pstmt.setString(1, board.getTitle());
             pstmt.setString(2, board.getContent());
             pstmt.setString(3,idx);

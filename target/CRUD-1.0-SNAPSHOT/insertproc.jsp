@@ -11,9 +11,14 @@
     board.setName(name);
     BoardManager bm = new BoardManager();
     boolean success = bm.doInsert(board);
-    if(success){
+    if(success) {
         out.println("<script>");
         out.println("alert('글저장하였습니다.');");
+        out.println("window.location.href='board.jsp';");
+        out.println("</script>");
+    }else {
+        out.println("<script>");
+        out.println("alert('실패하였습니다.');");
         out.println("window.location.href='board.jsp';");
         out.println("</script>");
     }

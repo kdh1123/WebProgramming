@@ -4,24 +4,15 @@
 <head>
     <title>Jsp 게시판</title>
     <%@ include file="head.jsp"%>
-    <script>
-        $(document).ready(()=>{
-            $('#mybtn').on('click',()=>
-            {$('#mys').slideToggle()});
-        });
-    </script>
 
 </head>
 <body>
 <%@ include file="nav.jsp"%>
-<div class="container">
-    <h1 class="bg-primary text-white"  id="myh1">
-        게시판
+<div class="container" >
+    <h1 class="main-title" style="margin-bottom: 20px; text-align: center; text-shadow: aqua">
+        환영합니다
     </h1>
-    <button id="mybtn">mybtn</button>
-    <div id="mys">
-        <h1>슬라이드...</h1>
-    </div>
+   <img src="img.png" width="100%" height="auto">
 </div>
 </body>
 </html>
