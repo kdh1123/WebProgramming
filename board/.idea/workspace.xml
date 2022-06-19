@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fea2d733-9663-4e56-84ad-49311fa3a67f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/signdelete.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/sign.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/insertproc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/signupproc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/loginproc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/loginproc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/select.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/select.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/signrevise.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/updateproc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/signreviseproc.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="fea2d733-9663-4e56-84ad-49311fa3a67f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +128,7 @@
       <workItem from="1655336009348" duration="2340000" />
       <workItem from="1655375213801" duration="3021000" />
       <workItem from="1655451600744" duration="20159000" />
-      <workItem from="1655603229388" duration="1292000" />
+      <workItem from="1655603229388" duration="1406000" />
     </task>
     <servers />
   </component>
