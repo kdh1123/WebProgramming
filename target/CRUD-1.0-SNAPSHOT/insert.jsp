@@ -1,30 +1,33 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: DGSW
-  Date: 2022-04-27
-  Time: 오후 1:40
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.example.crud.MemberDB" %>
-
-<html >
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
 <head>
-    <title>회원 가입</title>
+    <title>Title</title>
+    <%@include file="head.jsp"%>
 </head>
 <body>
-<%@ include file="head.jsp"%>
-<h1>회원 가입</h1>
-
-<div>
-<form action="insertproc.jsp">
-    username<input type="text" name="username"/><br>
-    password<input type="text" name="password"/><br>
-    남<input type="checkbox" name="gender" value="남"/>
-    여<input type="checkbox" name="gender" value="여"/><br>
-    <input type="submit" value="저장" />
-</form>
+<%@include file="nav.jsp"%>
+<div class="container mt-3">
+    <form action="insertproc.jsp">
+        <h1 class="main-title">
+            글 작성
+        </h1>
+        <div class="row" style="margin-bottom: 40px">
+            <div class="col">
+                제목
+                <input class="form-control" type="text" name="title">
+                내용
+                <textarea class="form-control" rows="15" name="content"></textarea>
+                작성자
+                <input class="form-control" type="text" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input class="btn btn-primary" type="submit" value="저장">
+            </div>
+        </div>
+    </form>
 </div>
 </body>
 </html>
-

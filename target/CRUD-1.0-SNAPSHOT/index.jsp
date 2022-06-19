@@ -1,12 +1,27 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>메인화면</title>
-</head>
+    <title>Jsp 게시판</title>
+    <%@ include file="head.jsp"%>
+    <script>
+        $(document).ready(()=>{
+            $('#mybtn').on('click',()=>
+            {$('#mys').slideToggle()});
+        });
+    </script>
 
+</head>
 <body>
-<%@ include file="head.jsp" %>
-<h1>로그인 페이지 기능 구현</h1>
+<%@ include file="nav.jsp"%>
+<div class="container">
+    <h1 class="bg-primary text-white"  id="myh1">
+        게시판
+    </h1>
+    <button id="mybtn">mybtn</button>
+    <div id="mys">
+        <h1>슬라이드...</h1>
+    </div>
+</div>
 </body>
 </html>

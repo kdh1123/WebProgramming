@@ -1,8 +1,13 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="board.css" rel="stylesheet">
 <div>
     <ul>
         <li>
             <h3>
-            <a href="index.jsp">Main</a>
+            <a href="sign.jsp">Main</a>
             </h3>
         </li>
         <li>
@@ -12,7 +17,7 @@
         </li>
         <li>
             <h3>
-            <a href="insert.jsp">SignUp</a>
+            <a href="signup.jsp">SignUp</a>
             </h3>
         </li>
         <li>
@@ -22,7 +27,7 @@
         </li>
         <li>
             <h3>
-                <a href="update.jsp">UpdateInfo</a>
+                <a href="signrevise.jsp">UpdateInfo</a>
             </h3>
         </li>
     </ul>

@@ -22,7 +22,7 @@
 <body>
 <%@ include file="head.jsp" %>
 <h1>유저 목록 관리</h1>
-<form action="delete.jsp">
+<form action="signdelete.jsp">
     <table style="width:100%; border: 1px solid black;">
         <tr>
             <th>id</th><th>순번</th><th>이름</th><th>비번</th><th>성별</th>

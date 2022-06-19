@@ -18,13 +18,13 @@
     if(loginck){
         System.out.println("성공");
         session.setAttribute("username",username);
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("sign.jsp");
     }
     else {
         out.println("실패");
         out.println("<script>");
         out.println("alert('아이디 비밀번호 확인하세요.');");
-        out.println("location.href ='index.jsp';");
+        out.println("location.href ='sign.jsp';");
         out.println("</script>");
     }
 %>

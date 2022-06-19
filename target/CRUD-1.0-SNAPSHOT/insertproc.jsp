@@ -1,20 +1,20 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: DGSW
-  Date: 2022-04-27
-  Time: 오후 2:53
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page import="com.example.crud.MemberDB" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ page import="com.example.board.Board"%>
+<%@ page import="com.example.board.BoardManager"%>
 <%
-    String username = request.getParameter("username");
-    String password = request.getParameter("password");
-    String gender = request.getParameter("gender");
-
-    MemberDB md = new MemberDB();
-    md.doInsert(username, password, gender);
-
-    response.sendRedirect("select.jsp");
+    String title = request.getParameter("title");
+    String name = request.getParameter("name");
+    String content = request.getParameter("content");
+    Board board = new Board();
+    board.setTitle(title);
+    board.setContent(content);
+    board.setName(name);
+    BoardManager bm = new BoardManager();
+    boolean success = bm.doInsert(board);
+    if(success){
+        out.println("<script>");
+        out.println("alert('글저장하였습니다.');");
+        out.println("window.location.href='board.jsp';");
+        out.println("</script>");
+    }
 %>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Jsp 게시판</title>
     <%@ include file="head.jsp"%>
     <script>
         $(document).ready(()=>{
