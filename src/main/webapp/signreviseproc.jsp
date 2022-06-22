@@ -5,7 +5,7 @@
   Time: 오후 2:53
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="com.example.crud.MemberDB" %>
+<%@ page import="com.example.board.MemberDB" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%

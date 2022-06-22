@@ -1,4 +1,4 @@
-<%@ page import="com.example.crud.MemberDB" %>
+<%@ page import="com.example.board.MemberDB" %>
 <%@ page import="java.lang.reflect.Modifier" %><%--
   Created by IntelliJ IDEA.
   User: DGSW

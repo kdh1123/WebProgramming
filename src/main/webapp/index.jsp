@@ -1,18 +1,25 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: DGSW
+  Date: 2022-05-11
+  Time: 오후 2:34
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="head.jsp"%>
 <html>
 <head>
-    <title>Jsp 게시판</title>
-    <%@ include file="head.jsp"%>
-
+    <title>로그인</title>
 </head>
 <body>
-<%@ include file="nav.jsp"%>
-<div class="container" >
-    <h1 class="main-title" style="margin-bottom: 20px; text-align: center; text-shadow: aqua">
-        환영합니다
-    </h1>
-   <img src="img.png" width="100%" height="auto">
+<h1>로그인</h1>
+<div class="container">
+<form action="loginproc.jsp">
+    id <input name = "username" type="text"><br>
+    pw <input name = "password" type="text"><br>
+    <input type="submit" value="로그인">
+
+</form>
 </div>
 </body>
 </html>
