@@ -1,4 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="com.example.board.Board"%>
+<%@ page import="com.example.board.BoardManager"%>
+<%
+    String name = request.getParameter("userName");
+%>
 <!DOCTYPE html>
 <html>
 <head>

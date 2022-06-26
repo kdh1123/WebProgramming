@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.example.crud.MemberDB" %>
+<%@ page import="com.example.board.MemberDB" %>
 
 
 <%
@@ -16,6 +16,6 @@
     MemberDB md  = new MemberDB();
     md.doDelete(ids);
 
-    response.sendRedirect("select.jsp");
+    response.sendRedirect("userList.jsp");
 
 %>

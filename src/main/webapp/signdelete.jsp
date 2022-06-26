@@ -16,6 +16,6 @@
     MemberDB md  = new MemberDB();
     md.doDelete(ids);
 
-    response.sendRedirect("select.jsp");
+    response.sendRedirect("userList.jsp");
 
 %>

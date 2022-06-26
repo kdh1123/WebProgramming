@@ -106,7 +106,7 @@ public class MemberDB {
                     "jdbc:mysql://localhost:3306/aaa",
                     "root","key195163!");
             // sql 구문 준비
-            pstmt = con.prepareStatement("select * from UserInfo where username=? and password=?");
+            pstmt = con.prepareStatement("select * from UserInfo where username = ? and password = ?");
             pstmt.setString(1,username);
             pstmt.setString(2,password);
             rs = pstmt.executeQuery();

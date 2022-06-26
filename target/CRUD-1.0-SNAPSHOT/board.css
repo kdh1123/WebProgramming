@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 *{
     font-family:  'Jua', sans-serif;
+    text-align: center;
 }
  .main-title{
      padding: 20px;
      background-color: black;
      color: white;
+     text-align: center;
  }
 .board-table{
     padding: 10px;

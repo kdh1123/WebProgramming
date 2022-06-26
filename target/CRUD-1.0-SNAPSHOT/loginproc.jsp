@@ -1,4 +1,4 @@
-<%@ page import="com.example.crud.MemberDB" %>
+<%@ page import="com.example.board.MemberDB" %>
 <%@ page import="java.lang.reflect.Modifier" %><%--
   Created by IntelliJ IDEA.
   User: DGSW
@@ -18,13 +18,12 @@
     if(loginck){
         System.out.println("성공");
         session.setAttribute("username",username);
-        response.sendRedirect("sign.jsp");
+        response.sendRedirect("boardMain.jsp?username="+username);
     }
     else {
-        out.println("실패");
         out.println("<script>");
         out.println("alert('아이디 비밀번호 확인하세요.');");
-        out.println("location.href ='sign.jsp';");
+        out.println("location.href ='login.jsp';");
         out.println("</script>");
     }
 %>
